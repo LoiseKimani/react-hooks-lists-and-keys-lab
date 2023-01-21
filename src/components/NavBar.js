@@ -7,14 +7,17 @@ function NavBar() {
 
     <a key = {link} 
     
+    
     href={"#" + link} >
 
       {link}
-      </a>
+      </a>)
+      
       return (
 
         <nav>
-          {links}
+          
+          {myLinks}
         </nav>
       );
 }

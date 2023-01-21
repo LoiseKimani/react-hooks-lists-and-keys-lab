@@ -1,23 +1,23 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
 
-function ProjectList({ props }) {
-  console.log(ProjectList);
+function ProjectList({ projects }) {
+  console.log(projects);
   return (
     <div id="projects">
       <h2>My Projects</h2>
       <div id="project-list">
-        {props.map(projects => 
+        {projects.map(projects => 
 
         <ProjectItem 
 
-         key={props.id}
+         key={projects.id}
 
-          name={props.name}
+          name={projects.name}
 
-          about={props.about} 
+          about={projects.about} 
 
-          technologies={props.technologies}
+          technologies={projects.technologies}
           />
           )}
       </div>
